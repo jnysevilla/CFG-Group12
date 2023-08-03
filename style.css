@@ -1,3 +1,14 @@
+/* ROOT Pseudo-element */
+:root {
+    --primary: palevioletred;
+    --secondary: #786452;
+    
+}
+
+body {
+    font-family: "Space Mono" !important;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -9,9 +20,9 @@ nav ul, li {
     padding: 1rem;
 }
 
-nav a:link, a:active {
+nav a:link, a:active, a:visited {
     text-decoration: none;
-    color: palevioletred;
+    color: var(--primary);
 }
 
 .active {
@@ -47,7 +58,7 @@ main {
     font-weight: normal;
     font-style: italic;
     font-family: "Borel";
-    color: palevioletred;
+    color: var(--primary);
     text-shadow: 1px 3px rgb(237, 208, 212);
 }
 
@@ -68,7 +79,7 @@ main {
     align-items: center;
 }
 
-#flex-end {
+.flex-end {
     content: "";
     display: flex;
     justify-content: flex-end;
@@ -103,10 +114,12 @@ figcaption {
     justify-content: center;
     font: 1.2rem "Borel";
     margin: 1rem auto;
+    color: var(--secondary);
 }
 
 .content-pages {
     display: flex;
+    justify-content: space-between;
     background-color: aliceblue;
     padding: 10rem;
 }
@@ -118,6 +131,28 @@ figcaption {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+}
+
+
+.footer-content {
+    height: 100%;
+    width: 100%;
+    background-color: #D4DCCD;
+    padding: 2.5rem;
+}
+
+.ftr-header {
+    font-family: "Borel";
+    color: #5f634f;
+    margin: 2rem;
+}
+
+.ftr-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 0.8rem "Space Mono";
+    padding: 2rem 0 0;
 }
 
 
