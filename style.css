@@ -2,12 +2,58 @@
 :root {
     --primary: palevioletred;
     --secondary: #786452;
-    
+    --tertiary: #D4DCCD;
 }
 
 body {
-    font-family: "Space Mono" !important;
+    background-color: #f0f0f0;
+    text-align: justify;
+  }
+  
+  #draggableImage {
+    cursor: grab;
+    overflow: hidden;
+  }
+
+  .first-character {
+    font-weight:400;
+    float: left;
+    font-size: 5rem;
+    line-height: 4rem;
+    padding-top: 4px;
+    padding-right:8px;
+    padding-left: 3px;
 }
+
+.line-break {
+    border-bottom:1px solid black; 
+    width: 150px; 
+    margin: 10px auto;}
+
+.title {
+    font-family: 'Neonderthaw', cursive;
+}
+
+.logo {
+    width: 100%;
+    color: white;
+    text-shadow:
+                0 0 10px pink,
+                0 0 20px palevioletred;
+    font-size: 9rem !important;
+}
+
+.text-highlight {
+    border-radius: 1em 0 1em 0;
+    text-shadow: 1px 1px 1px #fff;
+    background-image: 
+      linear-gradient(-100deg, 
+        rgba(255,250,150,0.15),
+        rgba(249, 245, 170, 0.8) 100%, 
+        rgba(255,250,150,0.25)
+      );
+  }
+  
 
 nav {
     display: flex;
@@ -17,7 +63,7 @@ nav {
 nav ul, li {
     display: flex;
     list-style-type: none;
-    padding: 1rem;
+    padding: 1rem 2rem 0 2rem;
 }
 
 nav a:link, a:active, a:visited {
@@ -25,11 +71,51 @@ nav a:link, a:active, a:visited {
     color: var(--primary);
 }
 
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    background-color: white;
+}
+  
+.dropdown:hover .dropdown-menu {
+    border: 1px dashed var(--primary);
+    box-shadow: 3px 5px var(--tertiary);
+    display: block;
+}
+  
+.dropdown-menu li {
+    padding: 8px;
+}
+  
+.dropdown-menu li:hover {
+    background-color: rgb(246, 219, 224);
+}
+
+.dropdown-toggle {
+    display: inline;
+    position: relative;
+  }
+  
+  .dropdown-toggle:after {
+    content: " ▼"; /* Add the arrow icon */
+    margin-left: 5px;
+    color: var(--primary)
+  }
+  
+
 .active {
     display: inline-flex;
+    position: relative;
     color: rgb(116, 138, 127) !important;
-    font-family: "Borel";
+    font-family: "Borel" !important;
     font-size: 1.8rem;
+    /* top: -10px; */
 }
 
 main {
@@ -99,15 +185,15 @@ main {
 
 .creator-img img {
     display: inline-flex;
-    width: 200px;
+    width: 225px;
     flex-direction: row;
     justify-content: center;
     border-radius: 50%;
-    border: 1px dashed rgb(119, 73, 73);
-    background-color: rgb(231, 209, 219);
-    padding: 5px;
+    background-color: #fee7d3; 
+    padding: 10px;
     margin: 3rem;
 }
+
 
 figcaption {
     display: flex;
@@ -127,7 +213,7 @@ figcaption {
 .page-img {
     display: inline-flex;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
@@ -137,7 +223,7 @@ figcaption {
 .footer-content {
     height: 100%;
     width: 100%;
-    background-color: #D4DCCD;
+    background-color: var(--tertiary);
     padding: 2.5rem;
     font-size: 0.9rem;
     text-align: justify;
@@ -156,6 +242,7 @@ figcaption {
     font: 0.8rem "Space Mono";
     padding: 2rem 0 0;
 }
+
 
 
 
