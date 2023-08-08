@@ -1,4 +1,11 @@
 # CFG - Group 12
 
-This is a website created, coded and designed by:
+"Linked" is a community website designed to....
+
+
+Created, coded and designed by:
+Jenny Sevilla
+Ana Downer-Duprey
+Kainaat Aga
+Jordyn Olulu
 
