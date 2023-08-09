@@ -49,7 +49,7 @@ body {
     text-shadow:
                 0 0 10px pink,
                 0 0 20px palevioletred;
-    font-size: 6rem;
+    font-size: 4rem;
     padding-bottom: 30px;
 }
 
@@ -69,6 +69,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
+    background-color: transparent;
 }
 
 nav ul, li {
@@ -82,6 +83,7 @@ nav a:link, a:active, a:visited {
     color: var(--primary);
 }
 
+/* Navigation Dropdown Menu */
 .dropdown {
     position: relative;
 }
@@ -113,11 +115,11 @@ nav a:link, a:active, a:visited {
     position: relative;
   }
   
-  .dropdown-toggle:after {
+.dropdown-toggle:after {
     content: " ▼"; /* Add the arrow icon */
     margin-left: 5px;
     color: var(--primary)
-  }
+}
   
 
 .active {
@@ -137,6 +139,7 @@ main {
     text-align: justify;
 }
 
+/* Back to Top button */
 .back-to-top {
     display: none;
     position: fixed;
@@ -151,7 +154,7 @@ main {
     text-shadow: 2px 1px rgb(220, 220, 220);
   }
   
-  .back-to-top:hover {
+.back-to-top:hover {
     color: #555;
   }
   
