@@ -1,21 +1,21 @@
-/* ROOT Pseudo-element */
+/* Root Pseudo-element */
 :root {
     --primary: palevioletred;
     --secondary: #786452;
     --tertiary: #D4DCCD;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     background-color: #f0f0f0;
-    text-align: justify !important;
-  }
-  
-  #draggableImage {
-    cursor: grab;
-    overflow: hidden;
   }
 
-  .first-character {
+
+.first-character {
     font-weight:400;
     float: left;
     font-size: 5rem;
@@ -26,12 +26,21 @@ body {
 }
 
 .line-break {
-    border-bottom:1px solid black; 
-    width: 150px; 
-    margin: 10px auto;}
+    height: 1px;
+    background-color: #E6E6E6;
+    width: 350px;
+    margin: 20px auto;
+    background-image: linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -o-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -moz-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -webkit-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+}
+
 
 .title {
+    display: flex;
     font-family: 'Neonderthaw', cursive;
+    justify-content: center;
 }
 
 .logo {
@@ -40,8 +49,10 @@ body {
     text-shadow:
                 0 0 10px pink,
                 0 0 20px palevioletred;
-    font-size: 9rem !important;
+    font-size: 6rem;
+    padding-bottom: 30px;
 }
+
 
 .text-highlight {
     border-radius: 1em 0 1em 0;
@@ -123,7 +134,27 @@ main {
     height: auto;
     margin: 1rem auto;
     padding: 2rem;
+    text-align: justify;
 }
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--primary);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 2.8rem;
+    text-shadow: 2px 1px rgb(220, 220, 220);
+  }
+  
+  .back-to-top:hover {
+    color: #555;
+  }
+  
 
 .content-creator {
     background-color: rgb(255, 240, 240);
@@ -194,7 +225,6 @@ main {
     margin: 3rem;
 }
 
-
 figcaption {
     display: flex;
     justify-content: center;
@@ -219,6 +249,7 @@ figcaption {
     padding: 2rem;
 }
 
+/* Footer */
 
 .footer-content {
     height: 100%;
@@ -243,7 +274,35 @@ figcaption {
     padding: 2rem 0 0;
 }
 
+/* Keyframes & Animation */
 
+.glow {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+@keyframes glow {
+    from {
+      text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 20px #e60073, 
+        0 0 30px #e60073, 
+        0 0 40px #e60073, 
+        0 0 50px #e60073, 
+        0 0 60px #e60073;
+    }
+
+    to {
+      text-shadow:
+        0 0 2.5px #fff, 
+        0 0 5px #ff81c0, 
+        0 0 10px #ff81c0, 
+        0 0 20px #ff81c0, 
+        0 0 30px #ff81c0, 
+        0 0 40px #ff81c0, 
+        0 0 50px #ff81c0;
+    }
+  }
 
 
 
