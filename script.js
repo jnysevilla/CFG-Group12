@@ -16,8 +16,7 @@ backToTopButton.addEventListener('click', () => {
 });
 
 
-// Components
-// script.js
+// Components 
 document.addEventListener("DOMContentLoaded", function() {
   loadComponent("components/nav.html", "nav");
   loadComponent("components/footer.html", "footer");
