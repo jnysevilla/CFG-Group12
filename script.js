@@ -1,26 +1,41 @@
 // Javascript Code will go here 
 
-const draggableImage = document.getElementById('draggableImage');
+// Back to Top button
+const backToTopButton = document.getElementById('backToTopBtn');
 
-draggableImage.addEventListener('mousedown', (e) => {
-  const rect = draggableImage.getBoundingClientRect();
-  const offsetX = e.clientX - rect.left;
-  const offsetY = e.clientY - rect.top;
-
-  draggableImage.style.cursor = 'grabbing';
-  draggableImage.style.zIndex = 1000;
-
-  document.addEventListener('mousemove', onMouseMove);
-
-  document.addEventListener('mouseup', () => {
-    document.removeEventListener('mousemove', onMouseMove);
-    draggableImage.style.cursor = 'grab';
-    draggableImage.style.zIndex = 1;
-  });
-
-  function onMouseMove(event) {
-    const x = event.clientX - offsetX;
-    const y = event.clientY - offsetY;
-    draggableImage.style.transform = `translate(${x}px, ${y}px)`;
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
   }
 });
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+// Components 
+document.addEventListener("DOMContentLoaded", function() {
+  loadComponent("components/nav.html", "nav");
+  loadComponent("components/footer.html", "footer");
+});
+
+function loadComponent(componentUrl, containerId) {
+  var container = document.getElementById(containerId);
+  var xhr = new XMLHttpRequest();
+  
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        container.innerHTML = xhr.responseText;
+      } else {
+        console.error("Error loading component:", componentUrl);
+      }
+    }
+  };
+  
+  xhr.open("GET", componentUrl, true);
+  xhr.send();
+}
