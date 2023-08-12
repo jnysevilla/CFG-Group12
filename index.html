@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Our Website! Discover a community of diverse women sharing skills and knowledge. Join us to empower, collaborate, and create together.">
     <title>CFG - Web Development | Group 12</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -21,25 +25,17 @@
 </head>
 <body>
 
-    <!-- This is for the navigation bar -->
-   <nav>
-    <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#anchor-creator">Our Creators</a></li>
-        <li><a href="#">Contact</a></li>
-        <li class="dropdown dropdown-toggle"><a href="#">About</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Who are we?</a></li>
-                <li><a href="#">Who are we?</a></li>
-                <li><a href="#">Who are we?</a></li>
-            </ul>
-        </li>
-    </ul>
-   </nav>
+  <!-- Navigation Bar component -->
+  <div id="nav"></div>
+
+   <!-- Back to Top button -->
+   <button id="backToTopBtn" class="back-to-top"><i class="bi bi-arrow-up-square-fill"></i></button>
+
 
    <!-- This is the main or top section of the website -->
    <main>
-        <h1 class="logo title">Linked</h1>
+
+        <h1 class="glow logo title">Linked</h1>
 
             <p><span class="first-character"> L</span>orem ipsum dolor,  sit amet consectetur adipisicing elit. Eveniet quis porro, aliquam voluptatibus exercitationem aut, illo doloribus a autem temporibus neque nisi ullam assumenda! Aliquid fugit eius quos eum porro, amet, dolores placeat, veniam dolorem eveniet hic. Ea excepturi laborum dolor dignissimos at eius neque ab nesciunt doloribus voluptate reprehenderit quidem facere, <span class="text-highlight">architecto qui numquam possimus sit eos distinctio</span>  sunt nam? Sint a, incidunt laudantium et sit maxime eos! Autem praesentium assumenda veniam quod eveniet. Sequi aut eos eligendi. Nam asperiores nihil quis voluptas alias, vero quos quia voluptates iusto tempora molestiae libero, consequatur culpa perferendis, eligendi sapiente necessitatibus aut!</p>
             <p class="line-break"></p>
@@ -47,13 +43,15 @@
 
    </main>
 
+  
+
    <div class="content-pages">
         <div class="container">
                 <figure>
-                    <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_B3ruBJkB_Yk8m4KudA8uyrWnfUO67gq7MPmUyFwGktChxeXRzXPtVPhTzYQfLb4Oeo&usqp=CAU">
+                    <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_B3ruBJkB_Yk8m4KudA8uyrWnfUO67gq7MPmUyFwGktChxeXRzXPtVPhTzYQfLb4Oeo&usqp=CAU" alt="Image">
                 </figure>
                 <figure>
-                    <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_B3ruBJkB_Yk8m4KudA8uyrWnfUO67gq7MPmUyFwGktChxeXRzXPtVPhTzYQfLb4Oeo&usqp=CAU">
+                    <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_B3ruBJkB_Yk8m4KudA8uyrWnfUO67gq7MPmUyFwGktChxeXRzXPtVPhTzYQfLb4Oeo&usqp=CAU" alt="Image">
                 </figure>
         </div>
    </div>    
@@ -71,20 +69,20 @@
 
         <div class="creator-img"> 
             <figure>
-                <img src="img/ava_icon.png" alt="jenny">
-                <figcaption>Name</figcaption>
+                <img src="Imgs/ava_icon.png" alt="name">
+                <figcaption><a href="jenny.html">Jenny</a></figcaption>
+            </figure>
+            <figure>
+                <img src="Imgs/ava_icon.png" alt="name">
+                <figcaption><a href="kainaat.html">Kainaat</a></figcaption>
+            </figure>
+            <figure>
+                <img src="Imgs/ava_icon.png" alt="name">
+                <figcaption>Ana</figcaption>
             </figure>
             <figure>
                 <img src="img/ava_icon.png" alt="jenny">
                 <figcaption>Name</figcaption>
-            </figure>
-            <figure>
-                <img src="img/ava_icon.png" alt="jenny">
-                <figcaption>Name</figcaption>
-            </figure>
-            <figure>
-                <img src="img/ava_icon.png" alt="jenny">
-                <figcaption>Kainaat</figcaption>
             </figure>
         </div>
    </div>
@@ -107,6 +105,6 @@
         </div>
         
    </footer>
-   <a href="K1page.html">Kainaat</a>
+
 </body>
 </html>
