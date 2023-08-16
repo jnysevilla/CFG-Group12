@@ -28,31 +28,43 @@
   <!-- Navigation Bar component -->
   <div id="nav"></div>
 
-   <!-- Back to Top button -->
-   <button id="backToTopBtn" class="back-to-top"><i class="bi bi-arrow-up-square-fill"></i></button>
-
-
    <!-- This is the main or top section of the website -->
    <main>
+        <!-- Logo -->
+        <img src="https://cdn.dribbble.com/users/2564256/screenshots/15244235/media/3ba7d68600c42a84d4920cc56bfa31d8.png?resize=1600x1200&vertical=center" class="logo">
 
-        <h1 class="glow logo title">Linked</h1>
+            <p><span class="first-character"> W</span>elcome to <em>Linked</em>. Explore our inclusive digital space. A space designed to empower women and non-binary individuals. Here, you can <span class="text-highlight">effortlessly connect with like-minded individuals</span>, fostering meaningful collaborations and forging lifelong connections. Together, we create a vibrant community where diverse voices are celebrated, skills are shared, and collective growth is nurtured.</p>
 
-            <p><span class="first-character"> L</span>orem ipsum dolor,  sit amet consectetur adipisicing elit. Eveniet quis porro, aliquam voluptatibus exercitationem aut, illo doloribus a autem temporibus neque nisi ullam assumenda! Aliquid fugit eius quos eum porro, amet, dolores placeat, veniam dolorem eveniet hic. Ea excepturi laborum dolor dignissimos at eius neque ab nesciunt doloribus voluptate reprehenderit quidem facere, <span class="text-highlight">architecto qui numquam possimus sit eos distinctio</span>  sunt nam? Sint a, incidunt laudantium et sit maxime eos! Autem praesentium assumenda veniam quod eveniet. Sequi aut eos eligendi. Nam asperiores nihil quis voluptas alias, vero quos quia voluptates iusto tempora molestiae libero, consequatur culpa perferendis, eligendi sapiente necessitatibus aut!</p>
-            <p class="line-break"></p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse labore corporis ratione rem, repellendus repellat perferendis eos provident architecto harum!</p>
-
+            <!-- Email Subscription pop-up -->
+            <div class="flex-center">
+                <button class="btn-popup" id="open-popup">Subscribe to us!</button>
+            </div>        
+            
+            <div id="subscription-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup" id="close-popup"><i class="bi bi-x-square-fill"></i></span>
+                    <h2>Subscribe to us!</h2>
+                    <form id="subscribe-form">
+                        <div class="form-group">
+                            <label for="email">Email address: </label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <p id="email-error" class="error-message">Please enter your email!</p>
+                            <p id="invalid-email-error" class="error-message">Please enter a valid email address.</p>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <p id="thank-you-message" class="hidden">Thank you for subscribing!</div>
+                    </form> 
+                </div>
+            </div> 
    </main>
 
   
 
    <div class="content-pages">
-        <div class="container">
-                <figure>
-                    <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_B3ruBJkB_Yk8m4KudA8uyrWnfUO67gq7MPmUyFwGktChxeXRzXPtVPhTzYQfLb4Oeo&usqp=CAU" alt="Image">
-                </figure>
-                <figure>
-                    <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_B3ruBJkB_Yk8m4KudA8uyrWnfUO67gq7MPmUyFwGktChxeXRzXPtVPhTzYQfLb4Oeo&usqp=CAU" alt="Image">
-                </figure>
+        <div class="container col-4">
+               
         </div>
    </div>    
    
@@ -63,32 +75,37 @@
             <h2 class="display-3 creator-title">Our Creators</h2>
             
             <p class="quote">
-            <span class="display-6">"Empowering the Unheard Voices: </span><br>Diverse Women, United Skills"
+            <span class="quote display-6">"Empowering the Unheard Voices: </span><br>Diverse Women, United Skills"
             </p>
         </div>
 
         <div class="creator-img"> 
             <figure>
-                <img src="Imgs/ava_icon.png" alt="name">
+                <img src="Imgs/ava_icon.png" alt="Jenny">
                 <figcaption><a href="jenny.html">Jenny</a></figcaption>
             </figure>
             <figure>
-                <img src="Imgs/ava_icon.png" alt="name">
+                <img src="Imgs/ava_icon.png" alt="Kainaat">
                 <figcaption><a href="kainaat.html">Kainaat</a></figcaption>
             </figure>
             <figure>
-                <img src="Imgs/ava_icon.png" alt="name">
+                <img src="Imgs/ava_icon.png" alt="Ana">
                 <figcaption>Ana</figcaption>
             </figure>
             <figure>
-                <img src="Imgs/ava_icon.png" alt="name">
-                <figcaption>Name</figcaption>
+                <img src="Imgs/ava_icon.png" alt="Joyce">
+                <figcaption>Joyce</figcaption>
             </figure>
         </div>
+
+        <img src="Imgs/monstera.png" class="img-overlap" alt="monstera plant">
    </div>
-        
-  <div id="footer"></div>
-   
+
+    <!-- Footer Component  -->
+    <div id="footer"></div>
+
+     <!-- Back to Top button -->
+     <button id="backToTopBtn" class="back-to-top"><i class="bi bi-arrow-up-circle-fill"></i></button>
 
 </body>
 </html>
