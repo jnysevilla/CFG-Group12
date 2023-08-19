@@ -1,24 +1,9 @@
 // Javascript Code will go here 
 
-// Back to Top button
-const backToTopButton = document.getElementById('backToTopBtn');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    backToTopButton.style.display = 'block';
-  } else {
-    backToTopButton.style.display = 'none';
-  }
-});
-
-backToTopButton.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-
-// Components 
+// Components - This code loads the components from separate HTML file (e.g. header and footer) and injects the code into designated container elements in the main HTML page. 
+// Purpose: For organising and maintaining consistent structure to multiple pages and easier code maintenance.
 document.addEventListener("DOMContentLoaded", function() {
-  loadComponent("components/nav.html", "nav");
+  loadComponent("components/header.html", "header");
   loadComponent("components/footer.html", "footer");
 });
 
@@ -40,7 +25,41 @@ function loadComponent(componentUrl, containerId) {
   xhr.send();
 }
 
-// Subscribe Button 
+// Hamburger Menu
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-link").forEach(n => n.
+    addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+  }));
+});
+
+// Back to Top button
+// Purpose: For accesibility, convenience and UI/UX.
+const backToTopButton = document.getElementById('backToTopBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+// Subscribe Button - Landing Page
 document.addEventListener("DOMContentLoaded", function() {
   const popup = document.getElementById("subscription-popup");
   const openPopupButton = document.getElementById("open-popup");
@@ -74,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       emailErrorMessage.style.display = "none";
       invalidEmailMessage.style.display = "none";
+
       // Simulate successful subscription for demonstration
       // In real use, you would likely submit form data to a server
       thankYouMessage.style.display = "block"; // Display thank you message
@@ -86,8 +106,19 @@ document.addEventListener("DOMContentLoaded", function() {
     invalidEmailMessage.style.display = "none";
   });
 
+  // This function is to validate whether a given email address is in a valid format
   function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
 });
+
+
+// Modal
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+});
+
