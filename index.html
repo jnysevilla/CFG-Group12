@@ -6,6 +6,7 @@
     <meta name="description" content="Welcome to Our Website! Discover a community of diverse women sharing skills and knowledge. Join us to empower, collaborate, and create together.">
     <title>CFG - Web Development | Group 12</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Imgs/coffee.png"> 
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -17,16 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
-
-    <!-- Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
-    <script src="script.js" defer></script>
 </head>
-<body>
 
+<body>
   <!-- Navigation Bar component -->
-  <div id="nav"></div>
+  <div id="header"></div>
 
    <!-- This is the main or top section of the website -->
    <main>
@@ -43,7 +39,7 @@
             <div id="subscription-popup" class="popup">
                 <div class="popup-content">
                     <span class="close-popup" id="close-popup"><i class="bi bi-x-square-fill"></i></span>
-                    <h2>Subscribe to us!</h2>
+                    <h1>Subscribe to us!</h1>
                     <form id="subscribe-form">
                         <div class="form-group">
                             <label for="email">Email address: </label>
@@ -53,26 +49,31 @@
                             <p id="invalid-email-error" class="error-message">Please enter a valid email address.</p>
                         </div>
                         
-                        <button type="submit" class="submit-btn">Submit</button>
-                        <p id="thank-you-message" class="hidden">Thank you for subscribing!</p>
+                        <button type="submit" class="send-btn">Submit</button>
+                        <p id="thank-you-message" class="hidden">Thank you for subscribing!</div>
                     </form> 
                 </div>
             </div> 
+        </div>
+        
    </main>
+   <!-- <img src="Imgs/coffee.png" class="img-overlap" style="float:left; margin: -45px 10px 0 10px"> -->
 
   
-
-   <div class="content-pages">
-        <div class="container col-4">
-               
+   <!-- In Progress: Need to decide what to put in this section -->
+   <div class="content-pages justify-content-center">
+        <div class="container">
+               <h1 class="content-title col-md-4 col-4">Who are we?</h1>
+               <div class="col-sml-1 col-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam repudiandae libero perferendis neque eligendi, nemo nobis? Voluptatem magni quis maxime.
+               </div>
         </div>
    </div>    
    
 
-   <!-- This is for the creator section -->
+   <!-- This section is for creator's image link -->
    <div id="anchor-creator" class="content-creator">
         <div class="container creator-page">
-            <h2 class="display-3 creator-title">Our Creators</h2>
+            <h1 class="display-2 creator-title">Our Creators</h1>
             
             <p class="quote">
             <span class="quote display-6">"Empowering the Unheard Voices: </span><br>Diverse Women, United Skills"
@@ -99,7 +100,7 @@
             </figure>
         </div>
 
-        <img src="Imgs/monstera.png" class="img-overlap" alt="monstera plant">
+        
    </div>
 
 
@@ -108,8 +109,6 @@
 
      <!-- Back to Top button -->
      <button id="backToTopBtn" class="back-to-top"><i class="bi bi-arrow-up-circle-fill"></i></button>
-        
-   
 
 </body>
 </html>

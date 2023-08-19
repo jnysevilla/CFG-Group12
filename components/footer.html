@@ -1,50 +1,77 @@
+<!-- Floating leaf image on top of Footer -->
+<img src="Imgs/sunflower.png" class="img-overlap" alt="monstera plant">
+
 <footer>
-
     <div class="footer-content">
-        <div class="row justify-content-between">
 
-            <div class="col-md-4 col-12">
+        <!-- Footer Content Starts Here -->
+        <div class="row justify-content-between">
+            <!-- Socials & Disclaimer -->
+            <div class="col-md-5 col-12">
                 <div class="ftr-header">Socials:</div>
-                <div class="socials">
-                    <a href="instagram.com"><i class="bi bi-instagram"></i></a>
-                    <a href="github.com"><i class="bi bi-github"></i></a>
-                    <a href="linkedin.com"><i class="bi bi-linkedin"></i></a>
-                    <a href="slack.com"><i class="bi bi-slack"></i></a>
-                    <a href="facebook.com"><i class="bi bi-facebook"></i></a>
-                    <a href="dribbble.com"><i class="bi bi-dribbble"></i></a>
+                    <div class="socials">
+                        <a href="https://instagram.com" alt="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/" alt="Github"><i class="bi bi-github"></i></a>
+                        <a href="https://linkedin.com" alt="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://slack.com/intl/en-gb" alt="Slack"><i class="bi bi-slack"></i></a>
+                        <a href="https://facebook.com" alt="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://dribbble.com" alt="Dribble"><i class="bi bi-dribbble"></i></a>
+                    </div>
+
+                    <div class="ftr-header">Disclaimer:</div>
+                    <p class="justify">Some of the images used on this website do not belong to us and are sourced from various online platforms. We make no claim of ownership for these images and use them for illustrative purposes only. All rights to these images are retained by their respective owners. If you believe an image used on this site infringes upon your copyright, please contact us to request its removal. </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-5 col-12">
+                    <h1 class="ftr-header">Get in touch!</h1>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="first-name" class="form-label" required>Name:</label>
+                            <input type="text" class="form-control" id="first-name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label" required>Email address:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea class="form-control" id="message" required></textarea>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="send-btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Send</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title" id="staticBackdropLabel"><i class="bi bi-check-all"></i>Sent!</h1>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <img src="https://cdn.dribbble.com/users/1232665/screenshots/3036691/media/c87e3eb878b76403d795d7743562ff55.gif" style="width: 100%"><br>
+                                        We appreciate your feedback and we will do our best to get back to you as soon as possible.
+                                    </div>
+                                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-4 col-12">
-                <h1 class="ftr-header">Subscribe to us!</h1>
-                <form>
-                    <div class="mb-3">
-                      <label for="first-name" class="form-label">First Name</label>
-                      <input type="text" class="form-control" id="first-name">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="last-name" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="last-name">
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Submit</button>
-                  </form>
-
-                  <div id="thank-you-message"></div>     
-            </div>
-
-        </div>   
+        <!-- Copyright -->
+        <div class="ftr-copyright">
+             <p>Website designed & developed by © Group 12
+        </div>
     </div>
-
-    <div class="ftr-copyright">
-        <p>Website designed & developed by © Group 12</div>
 </footer>
+
+
 
 
