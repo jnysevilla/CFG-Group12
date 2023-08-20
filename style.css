@@ -53,6 +53,7 @@ body,
 .first-character {
     font-weight: 400;
     float: left;
+    font-family: "Neonderthaw";
     font-size: 5rem;
     line-height: 4rem;
     padding-top: 4px;
@@ -90,7 +91,7 @@ body,
 
 /* Navigation Bar */
 .navbar {
-    min-height: 70px;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +102,7 @@ body,
 
 .nav-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
     align-items: center;
     gap: 60px;
@@ -110,9 +111,10 @@ body,
 
 nav ul, li {
     display: flex;
-    justify-content: ;
+    justify-content: space-between;
     list-style-type: none;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    margin: 0 10px;
     gap: 70px;
     color: var(--cerise);
 }
@@ -133,6 +135,7 @@ nav a:hover {
     font-family: "Borel" !important;
     font-size: 1.5rem;
     padding: 0 15px;
+    margin: 10px !important;
 }
 
 .hamburger {

@@ -22,14 +22,51 @@
 
 <body>
   <!-- Navigation Bar component -->
-    <div id="header"></div>
-    
+  <header>
+    <nav class="navbar">
+        <div class="nav-branding"><a href="index.html">Linked</a><img src="Imgs/coffee.png" class="nav-logo" alt="coffee logo"></div>
+        
+        <!-- Hamburger Menu: Navigation changes on small screens -->
+        <div id="hamburger" class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+       </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item dropdown dropdown-toggle">
+                <a href="#" aria-label="Read more about us">About</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Our Story</a>
+                        </li>
+                        <li>
+                            <a href="#">Vision</a>
+                        </li>
+                        <li>
+                            <a href="#">Who are we?</a>
+                        </li>
+                    </ul>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#anchor-creator" aria-label="Website's authors">Our Creators</a>
+            </li>
+            <li class="nav-item">
+                <a href="#footer" aria-label="scroll to footer">Contact</a>
+            </li>
+        </ul>
+       </div>
+        
+    </nav>
+  </header>
+
+
    <!-- This is the main or top section of the website -->
    <main>
         <!-- Logo -->
         <img src="https://cdn.dribbble.com/users/2564256/screenshots/15244235/media/3ba7d68600c42a84d4920cc56bfa31d8.png?resize=1600x1200&vertical=center" class="logo">
 
-            <p><span class="first-character"> W</span>elcome to <em>Linked</em>. Explore our inclusive digital space. A space designed to empower women and non-binary individuals. Here, you can <span class="text-highlight">effortlessly connect with like-minded individuals</span>, fostering meaningful collaborations and forging lifelong connections. Together, we create a vibrant community where diverse voices are celebrated, skills are shared, and collective growth is nurtured.</p>
+            <p><span class="first-character"> W</span>elcome to <em>Linked</em>. Explore our inclusive digital space. A space designed to empower women and non-binary individuals. Here, you can effortlessly connect with like-minded individuals, fostering meaningful collaborations and forging lifelong connections. Together, we create a vibrant community where diverse voices are celebrated, skills are shared, and collective growth is nurtured.</p>
 
             <!-- Email Subscription pop-up -->
             <div class="flex-center">
@@ -116,6 +153,6 @@
 
      <!-- Javascript -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
