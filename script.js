@@ -40,6 +40,7 @@ function loadComponent(componentUrl, containerId) {
   xhr.send();
 }
 
+
 // Subscribe Button 
 document.addEventListener("DOMContentLoaded", function() {
   const popup = document.getElementById("subscription-popup");

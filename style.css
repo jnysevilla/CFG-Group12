@@ -108,6 +108,7 @@ nav ul, li {
     padding: 1rem 2rem 0 2rem;
 }
 
+
 nav a:link, a:active, a:visited {
     text-decoration: none;
     color: var(--bittersweet);
@@ -409,7 +410,7 @@ figcaption {
   .btn-popup {
     align-items: center;
     border-radius: 20px;
-    text-transform: ;
+    /*text-transform: ;*/
     font-family: "Borel";
     padding: 10px 20px 0 20px;
     color: var(--white-smoke);
