@@ -1,27 +1,13 @@
 /* Root Pseudo-element */
 :root {
-    --primary: palevioletred;
-    --secondary: #6c5e51;
     /* --tertiary: #D4DCCD; */
     --tertiary: #655a7c98;
-
-
-    --mint-green: #a9d8b8;
-    --air-blue: #4e8098;
-    --cherry-blossom: #efa9ae;
     --raisin-black: #212227;
     --cerise: #cf4d6f;
     --ebony: #5F634F;
-    --old-rose: #c78283;
     --white-smoke: #f2f4f3;
-
     --violet: #A085C1;
-    --bittersweet: rgb(191, 72, 79);
     --sunset: rgb(238, 200, 128);
-    --champagne: #bcbb8a;
-    --space-cadet: rgb(27, 24, 59);
-    --blush: rgb(211, 115, 135);  
-    --wheat: #6c4d0f;
 }
 
 html, 
@@ -37,12 +23,16 @@ body,
     font-size: 1rem;
     line-height: 0.3;
     font-family: "Borel", cursive;
-    color: var(--blush);
+    color: var(--violet);
   }
 
   h1 {
     font-family: "Borel", cursive;
     padding: 10px;
+  }
+
+  p {
+    line-height: 1.8rem;
   }
 
   .justify {
@@ -55,20 +45,21 @@ body,
     background-image: 
       linear-gradient(-100deg, 
         rgba(255, 255, 255, 0.15),
-        var(--sunset), 
-        var(--sunset)
+        #a085c152, 
+        #a085c1c7
       );
   }
 
 .first-character {
     font-weight: 400;
     float: left;
+    font-family: "Neonderthaw";
     font-size: 5rem;
     line-height: 4rem;
     padding-top: 4px;
     padding-right:8px;
     padding-left: 3px;
-    color: var(--blush);
+    color: var(--violet);
 }
 
 .title {
@@ -100,7 +91,7 @@ body,
 
 /* Navigation Bar */
 .navbar {
-    min-height: 70px;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +102,7 @@ body,
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
     align-items: center;
     gap: 60px;
@@ -120,9 +111,10 @@ body,
 
 nav ul, li {
     display: flex;
-    justify-content: ;
+    justify-content: space-between;
     list-style-type: none;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    margin: 0 10px;
     gap: 70px;
     color: var(--cerise);
 }
@@ -143,6 +135,7 @@ nav a:hover {
     font-family: "Borel" !important;
     font-size: 1.5rem;
     padding: 0 15px;
+    margin: 10px !important;
 }
 
 .hamburger {
@@ -153,7 +146,7 @@ nav a:hover {
 .bar {
     display: block;
     width: 25px; 
-    height: 3px; 
+    height: 5px; 
     margin: 3px 10px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -185,7 +178,7 @@ nav a:hover {
   
 .dropdown-menu li:hover {
     transition: 0.1s ease-in-out;
-    background-color: var(--sunset);
+    background-color: #a085c12a;
 }
 
 .dropdown-toggle {
@@ -294,12 +287,14 @@ a:hover {
 
 .creator-img img {
     display: inline-flex;
+    opacity: 0.8;
     width: 200px;
     flex-direction: row;
     justify-content: center;
     border-radius: 50%;
-    margin: 2rem;
+    margin: 1.5rem;
 }
+
 
 figcaption {
     display: flex;
@@ -367,9 +362,9 @@ figcaption {
 .socials a:link {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 10px;
-    gap: 20px;
+    gap: 5px;
 }
 
 .socials a:hover {
@@ -489,14 +484,87 @@ figcaption {
     background-color: var(--violet);
   }
 
+/* Jenny's Page Code Goes Here */
+.js-main {
+    width: 80%;
+    min-height: 500px;
+    background-color: rgba(203, 156, 171, 0.136);
+    font: 1rem "Space Mono";
+    margin: 20px auto 80px;
+    padding: 20px;
+    box-shadow: 20px 30px 0px var(--violet);
+    border: 2px solid var(--sunset)
+}
+
+.js-img {
+    width: 15%;
+    float: left;
+    position: relative;
+    margin: 0px auto;
+    top: 10px;
+    left: 85px;
+}
+
+.js-intro {
+    width: 80%;
+    height: auto;
+    text-align: justify !important;
+    justify-content: center;
+    overflow: scroll;
+    align-items: center;
+    margin: 20px auto;
+    padding: 30px 30px;
+}
+
+.js-socials {
+    display: block;
+    width: 100%;
+    margin: 80px auto;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+.js-socials a {
+    display: inline-block;
+    color: var(--white-smoke);
+    border: 2px solid var(--sunset);
+    background-color: var(--violet);
+    padding: 15px;
+    border-radius: 20px;
+    gap: 20px;
+    margin: 20px;
+}
+
+.js-socials a:hover {
+    border: 2px solid var(--violet);
+    background-color: var(--sunset);
+    padding: 15px;
+    gap: 20px;
+    margin: 20px;
+}
+/* End of Jenny's code */
+
 /* Kainaat's Page Code Goes Here */
 
 
-/* End of Code */
+/* End of Kainaat's Code */
 
 /* Keyframes & Animation */
-
 /* Glow Animation */
+.shake {
+    animation: shake 3s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    from{
+        transform: rotate(5deg);
+    }
+
+    to {
+        transform: rotate(-5deg);
+    }  
+}
+
 .glow {
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -566,9 +634,9 @@ figcaption {
     .socials a:link {
         display: flex;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
         padding: 5px;
-        gap: 10px; 
+        gap: 4px; 
     }
 
     .socials a:hover {
@@ -578,6 +646,15 @@ figcaption {
 
     .logo img {
         width: 75%;
+    }
+
+    /* Jenny's Page */
+    .js-main {
+        width: 80%;
+        font: 1rem "Space Mono";
+        margin: -20px auto 70px;
+        padding: 20px;
+        /* box-shadow: 10px 10px 0px var(--violet); */
     }
 }
 
@@ -591,26 +668,27 @@ figcaption {
             opacity: 0;
         }
         .navbar .hamburger.active .bar:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(50deg);
         }
         .navbar .hamburger.active .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-50deg);
         }
 
     .nav-menu {
-        position: fixed;
+        position: relative;
         left: -100%;
-        top: 70px;
-        gap: 60px;
-        flex-direction: column;
-        background-color: white;
+        top: 0px;
+        gap: 50px;
+        flex-direction: row;
+        background-color: inherit;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.4s;
+        font-size: 1rem;
     }
 
     .nav-item {
-        margin: 16px 0;
+        margin: 10px 0;
     }
 
     .nav-menu.active {
@@ -627,8 +705,35 @@ figcaption {
     .socials a:link {
         display: flex;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 5px;
-        gap: 10px; 
+        gap: 25px; 
     }
+
+    /* Jenny's Page */
+    .js-main {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-height: 500px;
+        font: 0.9rem "Space Mono";
+        margin: -20px auto 80px;
+        padding: auto;
+        box-shadow: 10px 10px 0px var(--violet);
+    }
+
+    .js-intro {
+        width: 80%;
+        max-height: 450px;
+        /* overflow: scroll ; */
+    }
+
+    .js-img {
+        width: 25%;
+        float: left;
+        overflow:;
+        left: 25px;
+        top: 100px;
+    }
+
  }
