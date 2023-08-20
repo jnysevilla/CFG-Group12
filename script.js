@@ -23,7 +23,7 @@ function loadComponent(componentUrl, containerId) {
   
   xhr.open("GET", componentUrl, true);
   xhr.send();
-}
+};
 
 // Hamburger Menu
 document.addEventListener("DOMContentLoaded", function() {
@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
       navMenu.classList.remove("active");
   }));
 });
+
 
 // Back to Top button
 // Purpose: For accesibility, convenience and UI/UX.

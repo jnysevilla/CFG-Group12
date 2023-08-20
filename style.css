@@ -111,7 +111,7 @@ body,
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     align-items: center;
     gap: 60px;
@@ -367,9 +367,9 @@ figcaption {
 .socials a:link {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 10px;
-    gap: 20px;
+    gap: 5px;
 }
 
 .socials a:hover {
@@ -489,10 +489,33 @@ figcaption {
     background-color: var(--violet);
   }
 
+/* Jenny's Page Code Goes Here */
+.j-main {
+    width: 80%;
+    height: 500px;
+    background-color: #bc8a8a35;
+    font: 1rem "Space Mono";
+    margin: 80px auto;
+    padding: 20px;
+    border: 5px dotted var(--violet);
+}
+
+.j-img {
+    width: 55%;
+    float:left;
+    position: relative;
+    margin: 0px auto;
+    top: -25px;
+    left: -75px;
+}
+
+
+/* End of Jenny's code */
+
 /* Kainaat's Page Code Goes Here */
 
 
-/* End of Code */
+/* End of Kainaat's Code */
 
 /* Keyframes & Animation */
 
@@ -566,9 +589,9 @@ figcaption {
     .socials a:link {
         display: flex;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
         padding: 5px;
-        gap: 10px; 
+        gap: 4px; 
     }
 
     .socials a:hover {
@@ -627,8 +650,8 @@ figcaption {
     .socials a:link {
         display: flex;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 5px;
-        gap: 10px; 
+        gap: 25px; 
     }
  }
