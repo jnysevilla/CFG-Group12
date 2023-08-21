@@ -319,7 +319,7 @@ figcaption {
     overflow: hidden;
     color: var(--sunset);
     margin: 10px 0px; 
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     text-shadow: 5px 3px 0px var(--white-smoke);
 }
@@ -612,6 +612,7 @@ figcaption {
         font-size: 1.2rem;
     }
 
+
     .logo,
     .logo img {
         width: 100%;
@@ -660,10 +661,13 @@ figcaption {
         padding: 20px;
         /* box-shadow: 10px 10px 0px var(--violet); */
     }
+    /* End of Jenny's code */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
+    
+    /* Hamburger Menu */
         .navbar .hamburger {
             display: block;
         }
