@@ -1,6 +1,6 @@
 /* Root Pseudo-element */
 :root {
-    /* --tertiary: #D4DCCD; */
+    --primary: #D4DCCD;
     --tertiary: #655a7c98;
     --raisin-black: #212227;
     --cerise: #cf4d6f;
@@ -76,6 +76,7 @@ body,
                 0 0 10px pink,
                 0 0 20px var(--cerise); */
     /* font-size: 4rem; */
+    opacity: 0.8;
     padding: 5px 0 0px;
     margin:  auto;
     display: flex;
@@ -114,7 +115,6 @@ nav ul, li {
     justify-content: space-between;
     list-style-type: none;
     padding: 10px 10px;
-    margin: 0 10px;
     gap: 70px;
     color: var(--cerise);
 }
@@ -287,7 +287,6 @@ a:hover {
 
 .creator-img img {
     display: inline-flex;
-    opacity: 0.8;
     width: 200px;
     flex-direction: row;
     justify-content: center;
@@ -305,23 +304,28 @@ figcaption {
 }
 
 .content-pages {
-    display: flex;
-    justify-content: space-between;
-    background-color: none;
-    padding: 5rem;
+    width: 80%;
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(220, 207, 186, 0.145);
+    box-shadow: 15px 10px 0px var(--sunset);
+    border: 4px double var(--tertiary);
+    padding: 40px;
 }
 
 .content-title {
-    color: var(--raisin-black);
-    background-color: var(--sunset);
-    width: 100%;
-    height: 400px;
-    margin: 3px 0px; 
+    overflow: hidden;
+    color: var(--sunset);
+    margin: 10px 0px; 
     font-size: 3rem;
-    box-shadow: 30px 25px var(--violet);
+    text-transform: uppercase;
+    text-shadow: 5px 3px 0px var(--white-smoke);
 }
 
 .img-overlap {
+    position: inherit;
     float: right;
     width: 100px;
     margin: -45px 0;
