@@ -16,7 +16,7 @@ body,
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   em {
@@ -76,7 +76,6 @@ body,
                 0 0 10px pink,
                 0 0 20px var(--cerise); */
     /* font-size: 4rem; */
-    opacity: 0.8;
     padding: 5px 0 0px;
     margin:  auto;
     display: flex;
@@ -96,7 +95,7 @@ body,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 20px;
     background-color: transparent;
     font-family: "Space Mono";
 }
@@ -106,7 +105,7 @@ body,
     justify-content: space-evenly;
     list-style: none;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     color: var(--cerise);
 }
 
@@ -115,7 +114,7 @@ nav ul, li {
     justify-content: space-between;
     list-style-type: none;
     padding: 10px 10px;
-    gap: 70px;
+    gap: 30px;
     color: var(--cerise);
 }
 
@@ -268,6 +267,7 @@ main {
 
 .creator-page {
     background-color: transparent;
+    width: 80%;
 }
 
 .creator-page a,
@@ -283,15 +283,23 @@ a:hover {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 20px auto;
+}
+
+.clip-path {
+    clip-path: circle(50%);
 }
 
 .creator-img img {
     display: inline-flex;
     width: 200px;
     flex-direction: row;
-    justify-content: center;
     border-radius: 50%;
-    margin: 1.5rem;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -299,7 +307,7 @@ figcaption {
     display: flex;
     justify-content: center;
     font: 1.2rem "Borel";
-    margin: 1rem auto;
+    margin: 10px auto;
     color: var(--ebony);
 }
 
@@ -653,6 +661,33 @@ figcaption {
         width: 75%;
     }
 
+    .content-title {
+        color: var(--sunset);
+        margin: 10px 0px; 
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        text-shadow: 5px 3px 0px var(--white-smoke);
+    }
+
+    .content-pages {
+        max-width: 80%;
+        max-height: 500px;
+        margin: 50px auto;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+    }
+
+    .creator-img img {
+        display: inline-flex;
+        width: 120px;
+      
+    }
+
+    
+
     /* Jenny's Page */
     .js-main {
         width: 80%;
@@ -716,6 +751,25 @@ figcaption {
         font-size: 2rem;
         padding: 5px;
         gap: 25px; 
+    }
+
+    .quote {
+        display: inline;
+        width: 25%;
+        flex-grow: 1;
+        font-size: 1rem;
+    }
+
+    p .quote {
+        font-size: 1.2rem;
+    }
+
+    .creator-title {
+        width: 20%;
+        flex-grow: 2;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.3rem;
+        color: var(--cerise);
     }
 
     /* Jenny's Page */
