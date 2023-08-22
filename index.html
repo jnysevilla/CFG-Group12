@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to Our Website! Discover a community of diverse women sharing skills and knowledge. Join us to empower, collaborate, and create together.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CFG - Web Development | Group 12</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Imgs/coffee.png"> 
@@ -17,13 +18,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Navigation Bar component -->
-  <header id="header">
-    <nav id="header" class="navbar">
+
+    <!-- This is for the navigation bar -->
+<header>
+    <nav class="navbar">
         <div class="nav-branding"><a href="index.html">Linked</a><img src="Imgs/coffee.png" class="nav-logo" alt="coffee logo"></div>
         
         <!-- Hamburger Menu: Navigation changes on small screens -->
@@ -54,19 +56,16 @@
             <li class="nav-item">
                 <a href="#footer" aria-label="scroll to footer">Contact</a>
             </li>
-        </ul>
-       </div>
-        
+        </ul>            
     </nav>
-  </header>
-
+</header>
 
    <!-- This is the main or top section of the website -->
    <main>
         <!-- Logo -->
         <img src="https://cdn.dribbble.com/users/2564256/screenshots/15244235/media/3ba7d68600c42a84d4920cc56bfa31d8.png?resize=1600x1200&vertical=center" class="logo">
 
-            <p><span class="first-character"> W</span>elcome to <em>Linked</em>, where unity blooms and diversity thrives. Explore our inclusive digital space. A space designed to empower women and non-binary individuals. Here, you can effortlessly connect with like-minded individuals, fostering meaningful collaborations and forging lifelong connections. Together, we create a vibrant community where diverse voices are celebrated, skills are shared, and collective growth is nurtured. Join us in shaping a digital realm where every story has a place to be told. 
+            <p id="anchor-about"><span class="first-character"> W</span>elcome to <em>Linked</em>, where unity blooms and diversity thrives. Explore our inclusive digital space. A space designed to empower women and non-binary individuals. Here, you can effortlessly connect with like-minded individuals, fostering meaningful collaborations and forging lifelong connections. Together, we create a vibrant community where diverse voices are celebrated, skills are shared, and collective growth is nurtured. Join us in shaping a digital realm where every story has a place to be told. 
             </p>
 
             <!-- Email Subscription pop-up -->
@@ -99,7 +98,7 @@
    <!-- In Progress: Need to decide what to put in this section -->
    <div class="img-overlap"><img src="Imgs/monstera.png" class="img-overlap" style="margin: 10px 85px;"></div>
    <div class="content-pages justify-content-center">
-            <h2 class="content-title"><i class="bi bi-stars"></i>Vision<i class="bi bi-stars"></i></h2>
+            <h2 id="anchor-vision" class="content-title"><i class="bi bi-stars"></i>Vision<i class="bi bi-stars"></i></h2>
             <p> Our vision is to empower <em>women</em> and <em>non-binary</em> individuals by providing a platform that promotes personal and professional growth through meaningful connections and collaborations. We believe that diverse perspectives enrich our collective understanding and drive positive change.</p><br>
             
             <h2 class="content-title"><i class="bi bi-stars"></i>Mission<i class="bi bi-stars"></i></h2>
@@ -138,9 +137,7 @@
                 <img src="Imgs/jordyn_icon.jpg"  alt="Joyce">
                 <figcaption><a href="Jordyn.html">Joyce</a></figcaption>
             </figure>
-        </div>
-
-        
+        </div>    
    </div>
 
     <!-- Footer Component  -->
