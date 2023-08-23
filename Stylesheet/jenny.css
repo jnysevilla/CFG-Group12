@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.text {
+    color: var(--violet);
+}
+
 .js-main {
     width: 80%;
     min-height: 500px;
