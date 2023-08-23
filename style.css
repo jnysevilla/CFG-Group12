@@ -1,5 +1,5 @@
 @import "Stylesheet/jenny.css";
-
+@import "Stylesheet/Kainaat.css";
 /* Root Pseudo-element */
 :root {
     --primary: #D4DCCD;
@@ -497,10 +497,6 @@ figcaption {
   .btn-popup:hover {
     background-color: var(--violet);
   }
-/* Kainaat's Page Code Goes Here */
-
-
-/* End of Kainaat's Code */
 
 /* Keyframes & Animation */
 /* Glow Animation */
