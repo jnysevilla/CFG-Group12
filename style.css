@@ -1,27 +1,15 @@
+@import "Stylesheet/jenny.css";
+
 /* Root Pseudo-element */
 :root {
-    --primary: palevioletred;
-    --secondary: #6c5e51;
-    /* --tertiary: #D4DCCD; */
+    --primary: #D4DCCD;
     --tertiary: #655a7c98;
-
-
-    --mint-green: #a9d8b8;
-    --air-blue: #4e8098;
-    --cherry-blossom: #efa9ae;
     --raisin-black: #212227;
     --cerise: #cf4d6f;
     --ebony: #5F634F;
-    --old-rose: #c78283;
     --white-smoke: #f2f4f3;
-
     --violet: #A085C1;
-    --bittersweet: rgb(191, 72, 79);
     --sunset: rgb(238, 200, 128);
-    --champagne: #bcbb8a;
-    --space-cadet: rgb(27, 24, 59);
-    --blush: rgb(211, 115, 135);  
-    --wheat: #6c4d0f;
 }
 
 html, 
@@ -30,19 +18,23 @@ body,
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   em {
     font-size: 1rem;
     line-height: 0.3;
     font-family: "Borel", cursive;
-    color: var(--blush);
+    color: var(--violet);
   }
 
   h1 {
     font-family: "Borel", cursive;
     padding: 10px;
+  }
+
+  p {
+    line-height: 1.8rem;
   }
 
   .justify {
@@ -55,20 +47,21 @@ body,
     background-image: 
       linear-gradient(-100deg, 
         rgba(255, 255, 255, 0.15),
-        var(--sunset), 
-        var(--sunset)
+        #a085c152, 
+        #a085c1c7
       );
   }
 
 .first-character {
     font-weight: 400;
     float: left;
+    font-family: "Neonderthaw";
     font-size: 5rem;
     line-height: 4rem;
     padding-top: 4px;
     padding-right:8px;
     padding-left: 3px;
-    color: var(--blush);
+    color: var(--violet);
 }
 
 .title {
@@ -100,30 +93,30 @@ body,
 
 /* Navigation Bar */
 .navbar {
-    min-height: 70px;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 20px;
     background-color: transparent;
     font-family: "Space Mono";
 }
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     color: var(--cerise);
 }
 
 nav ul, li {
     display: flex;
-    justify-content: ;
+    justify-content: space-between;
     list-style-type: none;
-    padding: 10px 5px;
-    gap: 70px;
+    padding: 10px 10px;
+    gap: 30px;
     color: var(--cerise);
 }
 
@@ -143,6 +136,7 @@ nav a:hover {
     font-family: "Borel" !important;
     font-size: 1.5rem;
     padding: 0 15px;
+    margin: 10px !important;
 }
 
 .hamburger {
@@ -153,7 +147,7 @@ nav a:hover {
 .bar {
     display: block;
     width: 25px; 
-    height: 3px; 
+    height: 5px; 
     margin: 3px 10px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -185,7 +179,7 @@ nav a:hover {
   
 .dropdown-menu li:hover {
     transition: 0.1s ease-in-out;
-    background-color: var(--sunset);
+    background-color: #a085c12a;
 }
 
 .dropdown-toggle {
@@ -275,6 +269,7 @@ main {
 
 .creator-page {
     background-color: transparent;
+    width: 80%;
 }
 
 .creator-page a,
@@ -290,43 +285,57 @@ a:hover {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 20px auto;
+}
+
+.clip-path {
+    clip-path: circle(50%);
 }
 
 .creator-img img {
     display: inline-flex;
     width: 200px;
     flex-direction: row;
-    justify-content: center;
     border-radius: 50%;
-    margin: 2rem;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
 }
+
 
 figcaption {
     display: flex;
     justify-content: center;
     font: 1.2rem "Borel";
-    margin: 1rem auto;
+    margin: 10px auto;
     color: var(--ebony);
 }
 
 .content-pages {
-    display: flex;
-    justify-content: space-between;
-    background-color: none;
-    padding: 5rem;
+    width: 80%;
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(220, 207, 186, 0.145);
+    box-shadow: 15px 10px 0px var(--sunset);
+    border: 4px double var(--tertiary);
+    padding: 40px;
 }
 
 .content-title {
-    color: var(--raisin-black);
-    background-color: var(--sunset);
-    width: 100%;
-    height: 400px;
-    margin: 3px 0px; 
-    font-size: 3rem;
-    box-shadow: 30px 25px var(--violet);
+    overflow: hidden;
+    color: var(--sunset);
+    margin: 10px 0px; 
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 5px 3px 0px var(--white-smoke);
 }
 
 .img-overlap {
+    position: inherit;
     float: right;
     width: 100px;
     margin: -45px 0;
@@ -367,9 +376,9 @@ figcaption {
 .socials a:link {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 10px;
-    gap: 20px;
+    gap: 5px;
 }
 
 .socials a:hover {
@@ -490,8 +499,21 @@ figcaption {
   }
 
 /* Keyframes & Animation */
-
 /* Glow Animation */
+.shake {
+    animation: shake 3s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    from{
+        transform: rotate(5deg);
+    }
+
+    to {
+        transform: rotate(-5deg);
+    }  
+}
+
 .glow {
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -535,6 +557,7 @@ figcaption {
         font-size: 1.2rem;
     }
 
+
     .logo,
     .logo img {
         width: 100%;
@@ -561,9 +584,9 @@ figcaption {
     .socials a:link {
         display: flex;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
         padding: 5px;
-        gap: 10px; 
+        gap: 4px; 
     }
 
     .socials a:hover {
@@ -574,10 +597,37 @@ figcaption {
     .logo img {
         width: 75%;
     }
+
+    .content-title {
+        color: var(--sunset);
+        margin: 10px 0px; 
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        text-shadow: 5px 3px 0px var(--white-smoke);
+    }
+
+    .content-pages {
+        max-width: 80%;
+        max-height: 500px;
+        margin: 50px auto;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+    }
+
+    .creator-img img {
+        display: inline-flex;
+        width: 120px;
+      
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
+    
+    /* Hamburger Menu */
         .navbar .hamburger {
             display: block;
         }
@@ -586,26 +636,27 @@ figcaption {
             opacity: 0;
         }
         .navbar .hamburger.active .bar:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(50deg);
         }
         .navbar .hamburger.active .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-50deg);
         }
 
     .nav-menu {
-        position: fixed;
+        position: relative;
         left: -100%;
-        top: 70px;
-        gap: 60px;
-        flex-direction: column;
-        background-color: white;
+        top: 0px;
+        gap: 50px;
+        flex-direction: row;
+        background-color: inherit;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.4s;
+        font-size: 1rem;
     }
 
     .nav-item {
-        margin: 16px 0;
+        margin: 10px 0;
     }
 
     .nav-menu.active {
@@ -622,8 +673,138 @@ figcaption {
     .socials a:link {
         display: flex;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 5px;
-        gap: 10px; 
+        gap: 25px; 
     }
- }
+
+    .quote {
+        display: inline;
+        width: 25%;
+        flex-grow: 1;
+        font-size: 1rem;
+    }
+
+    /*JO page code here*/
+    /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.white-text 
+{
+    color: white;
+    font-style: normal; 
+}
+
+/* Body styles */
+body {
+    font-family: 'Space Mono', monospace;
+    line-height: 4;
+    background-color: #fff0f0; /* Fallback color in case image is not loaded */
+    color: #fff0f0; /* Text color on top of the image */
+    position: relative;
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.body::before 
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 50%;
+    height: 30%;
+    background-image: url('icon2.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Other styles */
+.Jo-intro p 
+{
+    color: rgb(255, 250, 250);
+}
+
+/* Main content styles */
+.Jo 
+{
+    text-align: center;
+    padding: 1rem;
+}
+
+.Jo-img 
+{
+    width: 50%;
+    float: right;
+    overflow: hidden; /* Fix overflow issue */
+    margin-left: 5%; /* Use margin instead of left and top for spacing */
+    margin-top: 15%;
+}
+
+.Jo-intro 
+{
+    background-color: rgba(39, 36, 36, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.center-content 
+{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Back to top button styles */
+.back-to-top 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Jo-socials 
+{
+    padding: 4px; /* Adjust the padding as needed */
+    background-color: #fff0f0; /* Example background color */
+}
+
+.social-links 
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.social-links a 
+{
+    display: inline-flex; /* Display as inline-flex for proper alignment */
+    align-items: center;
+    text-decoration: none;
+    margin: 0 4px;
+    color: #000;
+}
+
+p .quote 
+{
+    font-size: 1.2rem;
+}
+
+.creator-title 
+{
+    width: 20%;
+    flex-grow: 2;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2.3rem;
+    color: var(--cerise);
+}
+}

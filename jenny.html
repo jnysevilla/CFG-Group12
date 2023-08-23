@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Our Website! Discover a community of diverse women sharing skills and knowledge. Join us to empower, collaborate, and create together.">
-    <title>CFG - Web Development | Group 12</title>
+    <meta name="description" content="Get to know Jenny.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page: Jenny</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Imgs/coffee.png"> 
 
@@ -17,31 +18,87 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="header"></div>
 
-  <button id="backToTopBtn" class="back-to-top"><i class="bi bi-arrow-up-square-fill"></i></button>
+  <!-- This is for the navigation bar -->
+<header>
+  <nav class="navbar">
+      <div class="nav-branding"><a href="index.html">Linked</a><img src="Imgs/coffee.png" class="nav-logo" alt="coffee logo"></div>
+      
+      <!-- Hamburger Menu: Navigation changes on small screens -->
+      <div id="hamburger" class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+     </div>
 
-  <section class="skills">
+      <ul class="nav-menu">
+          <li class="nav-item dropdown dropdown-toggle">
+              <a href="#" aria-label="Read more about us">About</a>
+                  <ul class="dropdown-menu">
+                      <li>
+                          <a href="#">Our Story</a>
+                      </li>
+                      <li>
+                          <a href="#">Vision</a>
+                      </li>
+                      <li>
+                          <a href="#">Who are we?</a>
+                      </li>
+                  </ul>
+          </li>
+          <li class="nav-item">
+              <a href="index.html#anchor-creator" aria-label="Website's authors">Our Creators</a>
+          </li>
+          <li class="nav-item">
+              <a href="#footer" aria-label="scroll to footer">Contact</a>
+          </li>
+      </ul>            
+  </nav>
+</header>
 
-  </section>
+  <img src="Imgs/jen.png" class="js-img" alt="Jenny - wearing pink dungaree">
+  <main class="js-main">
+    <div class="js-intro">
+      <p><em>Hi there!</em> My name is Jenny.<em><i class="bi bi-chat-heart"></i></em></p>
+      <p>By day, I play a pivotal role in the realm of healthcare as a skilled phlebotomist within the esteemed NHS. However, as the sun sets and my workday winds down, I dive headfirst into my passions. <em>Coding</em> is my canvas, where I craft intricate digital landscapes and bring ideas to life through lines of code. The challenge of solving problems and the joy of building something from scratch is what fuels my late night coding sessions.</p>
 
-  
+      <p>But that's not all. You might also catch me skating through the city streets on a pair of <em>roller skates</em> - Enland weather permitted of course! I love the rush of wind against my face and embrace the freedom of movement. </p>
 
-  <main>
+      <p>And then there's <em>photography</em>, a passion that allows me to capture the beauty hidden with everyday moments. I freeze time and tell stories through my lens, seeking out unique perspectives that often go unnoticed.</p>
 
-  
-
+      So, welcome to my world - here's to embracing the diverse tapestry of life's experiences!
+      <div class="float-end">
+        <br>xoxo,<br><em>Jenny</em>
+      </div>
+    </div>
+    <!-- Brief Introduction About Myself -->
   </main>
 
+
+  <section class="js-socials text-center">
+    <!-- Contact Details -->
+    <h1 class="display-5 text">Connect with me!</h1>
+      <a href="https://instagram.com/jenne.codes">
+        <i class="bi bi-instagram"> Instagram</i>
+      </a>
+      <a href="https://www.linkedin.com/in/jennysevilla/">
+        <i class="bi bi-linkedin"> LinkedIn</i>
+      </a>
+      <a href="https://github.com/jnysevilla">
+        <i class="bi bi-github"> Github</i>
+      </a>
+  </section>
   <div id="footer"></div>
 
-   <!-- Javascript -->
+    <!-- Back to Top button -->
+    <button id="backToTopBtn" class="back-to-top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+
+    <!-- Javascript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-   
-  <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
