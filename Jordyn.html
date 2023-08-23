@@ -1,86 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Our Website! Discover a community of diverse women sharing skills and knowledge. Join us to empower, collaborate, and create together.">
-    <title>Page: Welcome to Jordyn's World</title>
-    <link rel="stylesheet" href="Jordyn.css">
-    <link rel="icon" type="image/x-icon" href="Imgs/coffee.png"> 
-
+    
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="Jordyn.css">
+    
+    <title>Jordyn's Space</title>
 </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-branding">
+                <a href="index.html">Linked</a>
+                <img src="Imgs/coffee.png" class="nav-logo" alt="coffee logo">
+            </div>
+            
+            <!-- Hamburger Menu: Navigation changes on small screens -->
+            <div id="hamburger" class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
 
-<header>
-  <nav class="navbar">
-      <div class="nav-branding"><a href="index.html">Linked</a><img src="Imgs/coffee.png" class="nav-logo" alt="coffee logo"></div>
-      
-      <!-- Hamburger Menu: Navigation changes on small screens -->
-      <div id="hamburger" class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-     </div>
-
-      <ul class="nav-menu">
-          <li class="nav-item dropdown dropdown-toggle">
-              <a href="#" aria-label="Read more about us">About</a>
-                  <ul class="dropdown-menu">
-                      <li>
-                          <a href="#">Our Story</a>
-                      </li>
-                      <li>
-                          <a href="#">Vision</a>
-                      </li>
-                      <li>
-                          <a href="#">Who are we?</a>
-                      </li>
-                  </ul>
-          </li>
-          <li class="nav-item">
-              <a href="index.html#anchor-creator" aria-label="Website's authors">Our Creators</a>
-          </li>
-          <li class="nav-item">
-              <a href="#footer" aria-label="scroll to footer">Contact</a>
-          </li>
-      </ul>
-     </div>
-      
-  </nav>
-</header>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown dropdown-toggle">
+                    <a href="#" aria-label="Read more about us">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Who are we?</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#anchor-creator" aria-label="Website's authors">Our Creators</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#footer" aria-label="scroll to footer">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 
 <body>
-<<<<<<< Updated upstream
   <!-- Back to Top button -->
   <button id="backToTopBtn" class="back-to-top"><i class="bi bi-arrow-up-square-fill"></i></button>
-=======
-    <div id="nav"></div>
-    <button id="backToTopBtn" class="back-to-top">Back to top<i class="bi bi-arrow-up-square-fill"></i></button>
-    <img src="Imgs/icon2.jpg" class="Jo-img" alt="Jo - freestyle">
-
-    <main class="Jo main">
-        <div class="Jo-intro">
-           <p>Hello, I am</p>
-           <p><strong>Joyce</strong></p>
-           <p>A Biomedical Scientist with skills ranging from Analytical thinking, Laboratory techniques, Data analysis, Research methodology, and Medical equipment operation.</p>
-           <p>DevOps Engineer with skills ranging from Continuous integration, Containerization (Docker, Kubernetes), Infrastructure as code, Automation tools (Jenkins, Ansible), and Version control (Git).</p>
-           <p>Scrum Master with skills ranging from Agile methodologies, Team facilitation, Product backlog management, Sprint planning, Retrospective facilitation.</p>
-           <p>Have a walk through our multifunctional team and see what you can find.</p>
-           <p>BW, <span class="white-text">Joyce</span></p>
-         <div class="center-content">
-      </div>
-  </main>
->>>>>>> Stashed changes
   
   <img src="icon.jpg" class="JO-img" alt="Joyce - SW">
   <main class="JO-main">
@@ -97,29 +75,36 @@
         <br>Bw,<br><em>Joyce</em>
       </div>
     </div>
-    <!-- Brief Introduction About Myself -->
-  </main>
 
+    <main class="Jo main">
+      <main class="Jo main">
+        <div class="Jo-intro-container">
+            <div class="Jo-intro">
+            <p>Hello, I am</p>
+            <p><strong>Joyce</strong></p>
+            <p>A Biomedical Scientist with skills ranging from Analytical thinking, Laboratory techniques, Data analysis, Research methodology, and Medical equipment operation.</p>
+            <p>DevOps Engineer with skills ranging from Continuous integration, Containerization (Docker, Kubernetes), Infrastructure as code, Automation tools (Jenkins, Ansible), and Version control (Git).</p>
+            <p>Scrum Master with skills ranging from Agile methodologies, Team facilitation, Product backlog management, Sprint planning, Retrospective facilitation.</p>
+            <p>Have a walk through our multifunctional team and see what you can find.</p>
+            <p>BW, <span class="white-text">Joyce</span></p>
+        </div>
+    </main>
+  
+    <section class="Jo-socials text-center">
+        <!-- Contact Details -->
+        <h1 class="display-4 text">Connect with me!</h1>
+        <a href="https://instagram.com/jordyn58_?igshid=OGQ5ZDc2ODk2ZA==">
+            <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/olulu-joyce-45243627b">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Joyce-io/JOprojects.git">
+            <i class="bi bi-github"></i> Github
+        </a>
+    </section>
 
-  <section class="JO-socials text-center">
-    <!-- Contact Details -->
-    <h1 class="display-4 text">Connect with me!</h1>
-      <a href="https://instagram.com/jordyn58_?igshid=OGQ5ZDc2ODk2ZA==">
-        <i class="bi bi-instagram"> Instagram</i>
-      </a>
-      <a href="https://www.linkedin.com/in/olulu-joyce-45243627b">
-        <i class="bi bi-linkedin"> LinkedIn</i>
-      </a>
-      <a href="https://github.com/Joyce-io/JOprojects.git">
-        <i class="bi bi-github"> Github</i>
-      </a>
-    
-  </section>
-  <div id="footer"></div>
-
-   <!-- Javascript -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-   
-  <script src="script.js"></script>
+    <div id="footer"></div>
+    <script src="script.js"></script>
 </body>
 </html>
