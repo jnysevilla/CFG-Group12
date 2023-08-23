@@ -1,4 +1,5 @@
 @import "Stylesheet/jenny.css";
+@import "Stylesheet/jordyn.css";
 
 /* Root Pseudo-element */
 :root {
@@ -688,6 +689,7 @@ figcaption {
         flex-grow: 1;
         font-size: 1rem;
     }
+<<<<<<< Updated upstream
 
     p .quote {
         font-size: 1.2rem;
@@ -701,3 +703,6 @@ figcaption {
         color: var(--cerise);
     }
  }
+=======
+}
+>>>>>>> Stashed changes
