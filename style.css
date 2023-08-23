@@ -1,6 +1,7 @@
 @import "Stylesheet/jenny.css";
 @import "Stylesheet/Kainaat.css";
 @import "Stylesheet/Jordyn.css";
+@import "Stylesheet/ana.css";
 
 /* Root Pseudo-element */
 :root {
@@ -686,4 +687,5 @@ figcaption {
         flex-grow: 1;
         font-size: 1rem;
     }
-}
+ }
+
