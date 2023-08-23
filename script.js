@@ -3,8 +3,9 @@
 // Components - This code loads the components from separate HTML file (e.g. header and footer) and injects the code into designated container elements in the main HTML page. 
 // Purpose: For organising and maintaining consistent structure to multiple pages and easier code maintenance.
 document.addEventListener("DOMContentLoaded", function() {
-  loadComponent("components/header.html", "header");
+  // loadComponent("components/header.html", "header");
   loadComponent("components/footer.html", "footer");
+  
 });
 
 function loadComponent(componentUrl, containerId) {
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     navMenu.classList.toggle("active");
   });
 
+
   document.querySelectorAll(".nav-link").forEach(n => n.
     addEventListener("click", () => {
       hamburger.classList.remove("active");
@@ -59,7 +61,6 @@ backToTopButton.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-
 // Subscribe Button - Landing Page
 document.addEventListener("DOMContentLoaded", function() {
   const popup = document.getElementById("subscription-popup");
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const emailErrorMessage = document.getElementById("email-error");
   const invalidEmailMessage = document.getElementById("invalid-email-error");
 
-  openPopupButton.addEventListener("click", function() {
+  openPopupButton.addEventListener('click', () => {
     popup.style.display = "flex";
   });
 
@@ -115,10 +116,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Modal
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+// const myModal = document.getElementById('myModal')
+// const myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-});
+// myModal.addEventListener('shown.bs.modal', () => {
+//   myInput.focus()
+// });
 
