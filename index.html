@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to Our Website! Discover a community of diverse women sharing skills and knowledge. Join us to empower, collaborate, and create together.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CFG - Web Development | Group 12</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Imgs/coffee.png"> 
@@ -17,19 +18,55 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Navigation Bar component -->
-  <div id="header"></div>
+
+    <!-- This is for the navigation bar -->
+<header>
+    <nav class="navbar">
+        <div class="nav-branding"><a href="index.html">Linked</a><img src="Imgs/coffee.png" class="nav-logo" alt="coffee logo"></div>
+        
+        <!-- Hamburger Menu: Navigation changes on small screens -->
+        <div id="hamburger" class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+       </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item dropdown dropdown-toggle">
+                <a href="#" aria-label="Read more about us">About</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Our Story</a>
+                        </li>
+                        <li>
+                            <a href="#">Vision</a>
+                        </li>
+                        <li>
+                            <a href="#">Who are we?</a>
+                        </li>
+                    </ul>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#anchor-creator" aria-label="Website's authors">Our Creators</a>
+            </li>
+            <li class="nav-item">
+                <a href="#footer" aria-label="scroll to footer">Contact</a>
+            </li>
+        </ul>            
+    </nav>
+</header>
 
    <!-- This is the main or top section of the website -->
    <main>
         <!-- Logo -->
         <img src="https://cdn.dribbble.com/users/2564256/screenshots/15244235/media/3ba7d68600c42a84d4920cc56bfa31d8.png?resize=1600x1200&vertical=center" class="logo">
 
-            <p><span class="first-character"> W</span>elcome to <em>Linked</em>. Explore our inclusive digital space. A space designed to empower women and non-binary individuals. Here, you can <span class="text-highlight">effortlessly connect with like-minded individuals</span>, fostering meaningful collaborations and forging lifelong connections. Together, we create a vibrant community where diverse voices are celebrated, skills are shared, and collective growth is nurtured.</p>
+            <p id="anchor-about"><span class="first-character"> W</span>elcome to <em>Linked</em>, where unity blooms and diversity thrives. Explore our inclusive digital space. A space designed to empower women and non-binary individuals. Here, you can effortlessly connect with like-minded individuals, fostering meaningful collaborations and forging lifelong connections. Together, we create a vibrant community where diverse voices are celebrated, skills are shared, and collective growth is nurtured. Join us in shaping a digital realm where every story has a place to be told. 
+            </p>
 
             <!-- Email Subscription pop-up -->
             <div class="flex-center">
@@ -57,16 +94,19 @@
         </div>
         
    </main>
-   <!-- <img src="Imgs/coffee.png" class="img-overlap" style="float:left; margin: -45px 10px 0 10px"> -->
 
-  
    <!-- In Progress: Need to decide what to put in this section -->
+   <div class="img-overlap"><img src="Imgs/monstera.png" class="img-overlap" style="margin: 10px 85px;"></div>
    <div class="content-pages justify-content-center">
-        <div class="container">
-               <h1 class="content-title col-md-4 col-4">Who are we?</h1>
-               <div class="col-sml-1 col-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam repudiandae libero perferendis neque eligendi, nemo nobis? Voluptatem magni quis maxime.
-               </div>
-        </div>
+            <h2 id="anchor-vision" class="content-title"><i class="bi bi-stars"></i>Vision<i class="bi bi-stars"></i></h2>
+            <p> Our vision is to empower <em>women</em> and <em>non-binary</em> individuals by providing a platform that promotes personal and professional growth through meaningful connections and collaborations. We believe that diverse perspectives enrich our collective understanding and drive positive change.</p><br>
+            
+            <h2 class="content-title"><i class="bi bi-stars"></i>Mission<i class="bi bi-stars"></i></h2>
+            <p>At <em>Linked</em>, our mission is to create a dynamic online platform that unites women and non-binary individuals from diverse backgrounds, fostering a community where everyone's voices and contributions are valued and celebrated. Through our website, we aim to provide a safe space for individuals <span class="text-highlight">to connect, collaborate, and share their skills, knowledge, and experiences.</span></p>
+            
+            <p>
+            By offering a range of resources, networking opportunities, and interactive features, we strive to empower our community members to pursue their passions, achieve their goals, and uplift one another. At Linked, we are committed to creating a vibrant digital space that reflects the power of unity and inclusivity in driving collective progress. </p>
+    
    </div>    
    
 
@@ -82,24 +122,22 @@
 
         <div class="creator-img"> 
             <figure>
-                <img src="Imgs/ava_icon.png" alt="Jenny">
+                <img src="Imgs/jen_icon.jpg" alt="Jenny with cherry blossoms">
                 <figcaption><a href="jenny.html">Jenny</a></figcaption>
             </figure>
             <figure>
-                <img src="Imgs/ava_icon.png" alt="Kainaat">
-                <figcaption><a href="kainaat.html">Kainaat</a></figcaption>
+                <img src="Imgs/Kainaat_icon.jpg" alt="Kainaat">
+                <figcaption><a href="Kainaat.html">Kainaat</a></figcaption>
             </figure>
             <figure>
                 <img src="Imgs/ana_icon.jpeg" alt="Ana at Carnival">
                 <figcaption>Ana</figcaption>
             </figure>
             <figure>
-                <img src="Imgs/ava_icon.png" alt="Joyce">
-                <figcaption>Joyce</figcaption>
+                <img src="Imgs/jordyn_icon.jpg"  alt="Joyce">
+                <figcaption><a href="Jordyn.html">Joyce</a></figcaption>
             </figure>
-        </div>
-
-        
+        </div>    
    </div>
 
     <!-- Footer Component  -->
@@ -110,6 +148,6 @@
 
      <!-- Javascript -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>

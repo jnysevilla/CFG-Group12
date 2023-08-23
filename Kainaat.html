@@ -7,6 +7,7 @@
     <meta name="description" content="Welcome to Our Website! Discover a community of diverse women sharing skills and knowledge. Join us to empower, collaborate, and create together.">
     <title>Kainaat's Page</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="icon" type="image/x-icon" href="Imgs/coffee.png"> 
 
     <!-- Bootstrap -->
@@ -21,13 +22,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shadows+Into+Light+Two&family=Borel&family=Cormorant+Garamond:wght@300&family=Neonderthaw&family=Plus+Jakarta+Sans&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="header"></div>
-  <!-- You will want to wrap this link in other elements, we're just showing you how its done -->
-<main> 
-  <img src="D:\Kainaat\Project Group 12\Github\CFG-Group12\Imgs\Kainaat.jpg"/width="300"height="300"/>
-Hi!!
-My name is Kainaat.
+   <!-- This is for the navigation bar -->
+<header>
+  <nav class="navbar">
+      <div class="nav-branding"><a href="index.html">Linked</a><img src="Imgs/coffee.png" class="nav-logo" alt="coffee logo"></div>
+      
+      <!-- Hamburger Menu: Navigation changes on small screens -->
+      <div id="hamburger" class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+     </div>
 
+      <ul class="nav-menu">
+          <li class="nav-item dropdown dropdown-toggle">
+              <a href="#" aria-label="Read more about us">About</a>
+                  <ul class="dropdown-menu">
+                      <li>
+                          <a href="#">Our Story</a>
+                      </li>
+                      <li>
+                          <a href="#">Vision</a>
+                      </li>
+                      <li>
+                          <a href="#">Who are we?</a>
+                      </li>
+                  </ul>
+          </li>
+          <li class="nav-item">
+              <a href="index.html#anchor-creator" aria-label="Website's authors">Our Creators</a>
+          </li>
+          <li class="nav-item">
+              <a href="#footer" aria-label="scroll to footer">Contact</a>
+          </li>
+      </ul>            
+  </nav>
+</header>
+
+  <!-- You will want to wrap this link in other elements, we're just showing you how its done -->
+<main class="K-About"> 
+
+    <h1 class="k-title text-center">About Me</h1>
+      <img src="Imgs/Kainaat_icon.jpg" class="image_about">
+
+    <p>An experienced professional as an educator for both students and teachers. Interacting and engaging with children gives me immense pleasure.  I would love to connect with like minded individuals and make a difference to the younger generation of our society.
+    </p>
+      
+    <div class="row">
+        <h1 class="k-title text-center">Skills & Services </h1>
+      <div class="k-list">
+        <ul class="k-list">
+          <li>Parenting Counselling</li>
+          <li>Life Skills Training</li>
+          <li>Workshops</li>
+          <li>Teacher Training</li>
+          <li>Online Teaching</li>
+        </ul>
+      </div>
+    </div>
 </main>
 
   <div id="footer"></div>

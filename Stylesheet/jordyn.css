@@ -1,0 +1,77 @@
+
+/* Style the main content */
+.Jo-img {
+  text-align: center;
+  margin-top: 2rem;
+  background-image: url(icon2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: #f7f7f7;
+}
+
+.Jo-intro {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* ... other styles ... */
+
+.Jo-img img {
+  max-width: 15%;
+}
+
+.back-to-top {
+  background-color: #333;
+  color: rgb(112, 110, 110);
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+/* Style the main content section */
+.Jo-intro {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.white-text {
+  color: white;
+}
+
+/* Style the socials section */
+.Jo-socials {
+  background-color: #333;
+  padding: 2rem 0;
+  color: white;
+}
+
+.Jo-socials a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+/* Style the main content section */
+.Jo-main {
+  background-image: url('icon2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: white;
+  margin-top: 2rem;
+  z-index: -1;
+}
+
+.Jo-intro-container {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 2rem; 
+  max-width: 400px; 
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.Jo-intro {
+  line-height: 1.5;
+  margin: 0; /* Reset margins for the intro content */
+}
