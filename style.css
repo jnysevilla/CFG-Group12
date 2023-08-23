@@ -1,5 +1,5 @@
 @import "Stylesheet/jenny.css";
-@import "Stylesheet/Kainaat.css";
+
 /* Root Pseudo-element */
 :root {
     --primary: #D4DCCD;
@@ -684,6 +684,7 @@ figcaption {
         flex-grow: 1;
         font-size: 1rem;
     }
+<<<<<<< Updated upstream
 
     /*JO page code here*/
     /* Reset default margin and padding */
@@ -799,12 +800,11 @@ p .quote
     font-size: 1.2rem;
 }
 
-.creator-title 
-{
-    width: 20%;
-    flex-grow: 2;
-    font-family: "Plus Jakarta Sans";
-    font-size: 2.3rem;
-    color: var(--cerise);
-}
-}
+    .creator-title {
+        width: 20%;
+        flex-grow: 2;
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.3rem;
+        color: var(--cerise);
+    }
+ }
