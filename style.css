@@ -500,6 +500,55 @@ figcaption {
     background-color: var(--violet);
   }
 
+  /*Ana's page*/
+
+  .main-img {
+    width: 55%;
+    padding: 5px 0 0px;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.ana-title {
+    font-family: "Borel", cursive;
+    padding: 15px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+.paragraph {
+    font-family: "Plus Jakarta Sans";
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.costumes-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.costumes-circle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.costumes-circle img {
+    display: inline-flex;
+    width: 200px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 2rem;
+  }
+
+
 /* Keyframes & Animation */
 /* Glow Animation */
 .shake {
@@ -686,4 +735,5 @@ figcaption {
         flex-grow: 1;
         font-size: 1rem;
     }
-}
+ }
+
