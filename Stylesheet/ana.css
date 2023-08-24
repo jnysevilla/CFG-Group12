@@ -147,6 +147,7 @@
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes fade {
