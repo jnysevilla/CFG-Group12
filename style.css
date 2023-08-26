@@ -628,7 +628,7 @@ figcaption {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+@media only screen and (max-width: 768px) { 
     
     /* Hamburger Menu */
         .navbar .hamburger {
