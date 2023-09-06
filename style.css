@@ -191,7 +191,7 @@ nav a:hover {
   }
   
 .dropdown-toggle:after {
-    content: " ▼"; /* Adds the arrow icon */
+    content: ""; /* Adds the arrow icon */
     margin-left: 5px;
     color: inherit;
 }

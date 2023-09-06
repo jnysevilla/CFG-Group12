@@ -1,4 +1,3 @@
-
 /* Style the main content */
 .Jo-img {
   text-align: center;
@@ -18,7 +17,7 @@
 /* ... other styles ... */
 
 .Jo-img img {
-  max-width: 15%;
+  max-width: 500px;
 }
 
 .back-to-top {
@@ -41,12 +40,12 @@
 
 /* Style the socials section */
 .Jo-socials {
-  background-color: #333;
+  /* background-color: #333; */
   padding: 2rem 0;
-  color: white;
+  color: #333;
 }
 
-.Jo-socials a {
+.Jo-socials > a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
